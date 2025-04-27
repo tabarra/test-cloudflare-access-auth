@@ -1,3 +1,2 @@
-[start]
-  runImage = 'oven/bun:1-alpine'
-  cmd = 'bun run start'
+[phases.setup]
+nixPkgs = ["...", "bun"]
